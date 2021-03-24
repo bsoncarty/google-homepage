@@ -14,33 +14,96 @@
 
         a {
             color: black;
+            font-size: smaller;
+            font-family: Arial, sans-serif;
+            vertical-align: middle;
+            text-decoration: none;
         }
         
         .logo {
             text-align: center;
-            padding-top: 109px;
+            padding-top: 159px;
+            cursor: pointer;
         }
 
         .search #searchbar {
             display: block;
-            width: 400px;
+            width: 500px;
             text-align: left;
             border-radius: 50px;
-            margin-left: 430px;
-            margin-top: 20px;
+            margin-left: 380px;
+            margin-top: 30px;
             height: 35px;
             border-width: thin;
             border-color: rgb(199, 183, 183);
             opacity: 50%;
         }
 
+        .block {
+            background-color:#4285f4;
+            font-weight: bold;
+            width: 70px;
+            color: white;
+            border: 1px solid #4285f4;
+            display: inline-block;
+            line-height: 28px;  
+            margin-top: -5px;        
+        }
+
+        .bars {
+            opacity: 55%;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        
+        .magnify {
+            position:relative;
+            margin-left: 400px;
+            top:-25px;
+            right:10px;
+        }
+
+        .mic {
+            float: right;
+            margin-right: 400px;
+            position:relative;
+            top:-45px;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color:#f2f2f2;
+            opacity: 55%;
+            display: inline-block;
+        }
+
+        .leftfoot {
+            position: relative;
+            bottom: 0px;
+        }
+
+        .buttons {
+            position: relative;
+            left: 500px;
+            display: inline-block;
+            font-weight: bold;
+            width: auto; 
+            margin: 11px 4px;
+        }
+
+
     </style>
 </head>
+
 <header>
     <ul>
         <li><a href="about">About</a> </li>
         <li><a href="store">Store</a></li>
-        <li style="float: right;"><a href="sign-in">Sign in</a></li>
+        <li style="float: right;"><button class="block">Sign in</button></li>
+        <li style="float: right;"><img src="bars.png" class="bars"></li>
         <li style="float: right;"><a href="images">Images</a></li>
         <li style="float: right;"><a href="gmail">Gmail</a></li>
     </ul>
@@ -51,6 +114,24 @@
     </div>
     <div class="search">
         <input id="searchbar" name="search" type="text">
+        <div class="icons">
+            <div><img src="search.png" class="magnify"></div>
+            <div><img src="mic.png" class="mic"></div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button class="search">Google Search</button>
+        <button class="lucky">I'm Feeling Lucky</button>
     </div>
 </body>
+<div class="footer">
+    <ul>
+        <li><a href="#" class="leftfoot">Advertising</li>
+        <li><a href="#" class="leftfoot">Business</a></li>
+        <li><a href="#" class="leftfoot">How Search works</a></li>
+        <li style="float: right;"><a href="#">Settings</li>
+        <li style="float: right;"><a href="#">Terms</a></li>
+        <li style="float: right;"><a href="#">Privacy</a></li>
+    </ul>
+</footer>
 </html>
